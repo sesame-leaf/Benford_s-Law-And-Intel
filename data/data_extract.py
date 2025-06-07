@@ -6,6 +6,11 @@
     위 URL의 HTML에서 주가 데이터를 추출하여 CSV 파일로 변환 했고, 이 코드는 추출을 수행하는 코드입니다.
     
     이 코드는 Claude 3.7 Sonnet이 작성하였습니다.
+    명령 프롬프트:
+    이 HTML 파일은 Intel의 주가 데이터야. 이 주가 데이터를 csv파일로 만들어야해.
+    csv는 Date, Open, High, Low, Close, Adj_Close, Volume 데이터로 이루어져 있어.
+    HTML에서 하루 데이터는 <tr class="yf-1jecxey">에 묶여 있고, 그 하위에 있는 <td class="yf-1jecxey">각각에 내가 위에서 말한 각각의 데이터가 있어.
+    python으로 HTML에서 data를 추출해서 csv로 저장하는 코드를 data_extract.py에 만들어줘.
 """
 
 import os
